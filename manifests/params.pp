@@ -2,6 +2,8 @@
 class pnp4nagios::params (
   $ensure = present,
   $monitoring_type = hiera('monitoring::params::monitoring_type'),
+  $use_url_rewriting = hiera('monitoring::params::use_url_rewriting'),
+  $monitoring_type = hiera('monitoring::params::nagios_base'),
   $log_type = 'file',
   $debug_lvl = 0,
 ) {

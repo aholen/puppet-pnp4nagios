@@ -24,7 +24,7 @@
 # URL rewriting is used by default to create friendly URLs. 
 # Set this value to '0' if URL rewriting is not available on your system.
 #
-$conf['use_url_rewriting'] = 1;
+$conf['use_url_rewriting'] = <%= @use_url_rewriting %>;
 #
 # Location of rrdtool binary
 #
@@ -89,7 +89,7 @@ $conf['temp'] = "/var/tmp";
 #
 # Link back to Nagios or Thruk ( www.thruk.org ) 
 #
-$conf['nagios_base'] = "/<%= @monitoring_type %>/cgi-bin";
+$conf['nagios_base'] = "/<%= @nagios_base %>";
 
 #
 # Link back to check_mk´s multisite ( http://mathias-kettner.de/checkmk_multisite.html )

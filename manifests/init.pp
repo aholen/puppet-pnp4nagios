@@ -10,9 +10,18 @@
 # [*ensure*]
 #   ensuring whether pnp4nagios is present or not
 #   
-# [*monotiring_type*]
+# [*monitoring_type*]
 #   Type of monitoring server you have
 #   Will get this from the hiera variable monitoring::params::monitoring_type
+#   
+# [*use_url_rewriting*]
+#   URL rewriting is used by default to create friendly URLs.
+#   Set this value to '0' if URL rewriting is not available on your system.
+#   Will get this from the hiera variable monitoring::params::use_url_rewriting
+#   
+# [*nagios_base*]
+#   Sets the nagios_base
+#   Will get this from the hiera variable monitoring::params::nagios_base
 #   
 #
 # === Variables

@@ -3,6 +3,8 @@ class pnp4nagios::config {
 
   #  include pnp4nagios::params
   $monitoring_type = $pnp4nagios::params::monitoring_type
+  $use_url_rewriting = $pnp4nagios::params::use_url_rewriting
+  $nagios_base = $pnp4nagios::params::nagios_base
   $log_type = $pnp4nagios::params::log_type
   $debug_lvl = $pnp4nagios::params::debug_lvl
 
